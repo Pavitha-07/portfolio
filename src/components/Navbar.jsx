@@ -3,16 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css';
 
 const links = [
-  { label: 'About',    href: '#about'    },
-  { label: 'Skills',   href: '#skills'   },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Contact',  href: '#contact'  },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled]   = useState(false);
-  const [menuOpen, setMenuOpen]   = useState(false);
-  const [active,   setActive]     = useState('');
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [active, setActive] = useState('');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -56,7 +56,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="mailto:pavitha.m2023@gmail.com"
+          href="mailto:impavitha07@gmail.com"
           className="btn-primary navbar__cta"
           aria-label="Hire Me"
         >
@@ -93,7 +93,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a href="mailto:pavitha.m2023@gmail.com" className="btn-primary" style={{ marginTop: '0.5rem' }}>
+            <a href="mailto:impavitha07@gmail.com" className="btn-primary" style={{ marginTop: '0.5rem' }}>
               Hire Me
             </a>
           </motion.div>

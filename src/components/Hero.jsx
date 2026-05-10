@@ -70,7 +70,6 @@ export default function Hero() {
             { num: '8.64', label: 'CGPA' },
             { num: '3+', label: 'Projects' },
             { num: '4+', label: 'Hackathon Finals' },
-            { num: 'SIH', label: 'National Winner' },
           ].map((s) => (
             <div key={s.label} className="hero__stat">
               <span className="hero__stat-num">{s.num}</span>
